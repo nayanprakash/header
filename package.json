@@ -1,0 +1,32 @@
+{
+  "name": "header",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "author":"Nayan Prakash",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-dom": "^16.8.3"
+  },
+  "scripts": {
+    "start": "webpack --watch --mode development",
+    "build": "webpack --mode production",
+    "transpile": "babel src -d dist --copy-files",
+    "postinstall": "npm i && npm run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "react": "^16.8.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3"
+  }
+}
